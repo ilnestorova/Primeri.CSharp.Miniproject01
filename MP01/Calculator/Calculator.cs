@@ -15,7 +15,7 @@ namespace Calculator
             //predefinirame nashata programa,zashtoto
             //Main e ot tip console app i e static, a nashia klas Calculator ne e
             Calculator nprogram = new Calculator();
-            nprogram.uInput.JustTesting();
+            nprogram.uInput.GetUserCommands();
         }
     }
 }

@@ -11,9 +11,21 @@ namespace UserInput01
         public UInput()
         {
         }
-        public void JustTesting()
+        public void GetUserCommands ()
         {
-            Console.WriteLine("Starting of UserInput.Iunput.JustTesting()");
+            string ucommand = "";
+            do
+            {
+                Console.Write( "Enter your command: " );
+                ucommand = Console.ReadLine();
+                if (ucommand.ToLower().Contains("command1")) Console.WriteLine("Command1 is starting");
+                if (ucommand.ToLower().Contains("command2")) Console.WriteLine("Command2 is starting");
+                if (ucommand.ToLower().Contains("command3")) Console.WriteLine("Command3 is starting");
+            } while (ucommand.ToLower() != "exit"); 
         }
-    }
+        public void JustTesting()
+         {
+             Console.WriteLine("Starting of UserInput.Iunput.JustTesting()");
+         }
+}
 }
