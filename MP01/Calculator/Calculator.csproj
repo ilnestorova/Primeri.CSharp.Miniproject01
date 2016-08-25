@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\About\About.csproj">
+      <Project>{0945b7d1-a4f9-48c5-b22e-7d9850bf4452}</Project>
+      <Name>About</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UserInput01\UserInput01.csproj">
       <Project>{2767ddbe-923a-4022-93a5-d40f3a080f6a}</Project>
       <Name>UserInput01</Name>

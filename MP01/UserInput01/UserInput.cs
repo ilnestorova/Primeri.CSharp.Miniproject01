@@ -11,12 +11,20 @@ namespace UserInput01
         public UInput()
         {
         }
+        //definirane na classa
+        About.Me about = new About.Me();
+        public void SayHello()
+        {
+            Console.WriteLine("Wellcome in "+about.shortName+"\n"+about.version+"\n");
+        }
         public void GetUserCommands ()
         {
             string ucommand = "";
             do
             {
+                //vzimane na comanda
                 Console.Write( "Enter your command: " );
+                // proverka za nalichni comandi
                 ucommand = Console.ReadLine();
                 if (ucommand.ToLower().Contains("command1")) Console.WriteLine("Command1 is starting");
                 if (ucommand.ToLower().Contains("command2")) Console.WriteLine("Command2 is starting");

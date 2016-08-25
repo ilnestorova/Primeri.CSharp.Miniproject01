@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2767DDBE-923A-4022-93A5-D40F3A080F6A}</ProjectGuid>
+    <ProjectGuid>{0945B7D1-A4F9-48C5-B22E-7D9850BF4452}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UserInput01</RootNamespace>
-    <AssemblyName>UserInput01</AssemblyName>
+    <RootNamespace>About</RootNamespace>
+    <AssemblyName>About</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,14 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UserInput.cs" />
+    <Compile Include="Me.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\About\About.csproj">
-      <Project>{0945b7d1-a4f9-48c5-b22e-7d9850bf4452}</Project>
-      <Name>About</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
