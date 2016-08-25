@@ -8,13 +8,16 @@ namespace UserInput01
 {
     public class UInput
     {
+        //definirane na classa
+        About.Me about = new About.Me();
+        Colors.ForCLI nc = new Colors.ForCLI();
         public UInput()
         {
         }
-        //definirane na classa
-        About.Me about = new About.Me();
+        
         public void SayHello()
         {
+            nc.Defaulf();
             Console.WriteLine("Wellcome in "+about.shortName+"\n"+about.version+"\n");
         }
         public void GetUserCommands ()
@@ -23,10 +26,16 @@ namespace UserInput01
             do
             {
                 //vzimane na comanda
+                nc.Promt();
                 Console.Write( "Enter your command: " );
                 // proverka za nalichni comandi
+                nc.Command();
                 ucommand = Console.ReadLine();
-                if (ucommand.ToLower().Contains("command1")) Console.WriteLine("Command1 is starting");
+                if (ucommand.ToLower().Contains("command1"))
+                {
+                    nc.Defaulf(); Console.Write("It is starting ");
+                    nc.Result(); Console.WriteLine("Command1\n");
+                }
                 if (ucommand.ToLower().Contains("command2")) Console.WriteLine("Command2 is starting");
                 if (ucommand.ToLower().Contains("command3")) Console.WriteLine("Command3 is starting");
             } while (ucommand.ToLower() != "exit"); 
