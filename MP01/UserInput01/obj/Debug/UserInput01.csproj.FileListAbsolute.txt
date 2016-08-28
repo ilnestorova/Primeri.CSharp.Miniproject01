@@ -1,0 +1,11 @@
+C:\AulaNew\primeri.csharp.miniproject01\MP01\UserInput01\bin\Debug\UserInput01.dll
+C:\AulaNew\primeri.csharp.miniproject01\MP01\UserInput01\bin\Debug\UserInput01.pdb
+C:\AulaNew\primeri.csharp.miniproject01\MP01\UserInput01\bin\Debug\About.dll
+C:\AulaNew\primeri.csharp.miniproject01\MP01\UserInput01\bin\Debug\Calculations.dll
+C:\AulaNew\primeri.csharp.miniproject01\MP01\UserInput01\bin\Debug\Colors.dll
+C:\AulaNew\primeri.csharp.miniproject01\MP01\UserInput01\bin\Debug\About.pdb
+C:\AulaNew\primeri.csharp.miniproject01\MP01\UserInput01\bin\Debug\Calculations.pdb
+C:\AulaNew\primeri.csharp.miniproject01\MP01\UserInput01\bin\Debug\Colors.pdb
+C:\AulaNew\primeri.csharp.miniproject01\MP01\UserInput01\obj\Debug\UserInput01.csprojResolveAssemblyReference.cache
+C:\AulaNew\primeri.csharp.miniproject01\MP01\UserInput01\obj\Debug\UserInput01.dll
+C:\AulaNew\primeri.csharp.miniproject01\MP01\UserInput01\obj\Debug\UserInput01.pdb

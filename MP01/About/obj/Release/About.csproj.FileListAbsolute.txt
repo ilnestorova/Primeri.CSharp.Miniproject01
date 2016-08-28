@@ -1,0 +1,5 @@
+C:\AulaNew\primeri.csharp.miniproject01\MP01\About\bin\Release\About.dll
+C:\AulaNew\primeri.csharp.miniproject01\MP01\About\bin\Release\About.pdb
+C:\AulaNew\primeri.csharp.miniproject01\MP01\About\obj\Release\About.csprojResolveAssemblyReference.cache
+C:\AulaNew\primeri.csharp.miniproject01\MP01\About\obj\Release\About.dll
+C:\AulaNew\primeri.csharp.miniproject01\MP01\About\obj\Release\About.pdb

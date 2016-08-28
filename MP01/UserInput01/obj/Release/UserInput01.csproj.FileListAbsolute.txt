@@ -1,0 +1,11 @@
+C:\AulaNew\primeri.csharp.miniproject01\MP01\UserInput01\bin\Release\UserInput01.dll
+C:\AulaNew\primeri.csharp.miniproject01\MP01\UserInput01\bin\Release\UserInput01.pdb
+C:\AulaNew\primeri.csharp.miniproject01\MP01\UserInput01\obj\Release\UserInput01.csprojResolveAssemblyReference.cache
+C:\AulaNew\primeri.csharp.miniproject01\MP01\UserInput01\obj\Release\UserInput01.dll
+C:\AulaNew\primeri.csharp.miniproject01\MP01\UserInput01\obj\Release\UserInput01.pdb
+C:\AulaNew\primeri.csharp.miniproject01\MP01\UserInput01\bin\Release\About.dll
+C:\AulaNew\primeri.csharp.miniproject01\MP01\UserInput01\bin\Release\About.pdb
+C:\AulaNew\primeri.csharp.miniproject01\MP01\UserInput01\bin\Release\Colors.dll
+C:\AulaNew\primeri.csharp.miniproject01\MP01\UserInput01\bin\Release\Colors.pdb
+C:\AulaNew\primeri.csharp.miniproject01\MP01\UserInput01\bin\Release\Calculations.dll
+C:\AulaNew\primeri.csharp.miniproject01\MP01\UserInput01\bin\Release\Calculations.pdb

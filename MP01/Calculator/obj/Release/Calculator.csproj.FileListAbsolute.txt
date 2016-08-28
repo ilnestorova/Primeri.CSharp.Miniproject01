@@ -1,0 +1,14 @@
+C:\AulaNew\primeri.csharp.miniproject01\MP01\Calculator\bin\Release\Calculator.exe.config
+C:\AulaNew\primeri.csharp.miniproject01\MP01\Calculator\bin\Release\Calculator.exe
+C:\AulaNew\primeri.csharp.miniproject01\MP01\Calculator\bin\Release\Calculator.pdb
+C:\AulaNew\primeri.csharp.miniproject01\MP01\Calculator\obj\Release\Calculator.exe
+C:\AulaNew\primeri.csharp.miniproject01\MP01\Calculator\obj\Release\Calculator.pdb
+C:\AulaNew\primeri.csharp.miniproject01\MP01\Calculator\bin\Release\UserInput01.dll
+C:\AulaNew\primeri.csharp.miniproject01\MP01\Calculator\bin\Release\UserInput01.pdb
+C:\AulaNew\primeri.csharp.miniproject01\MP01\Calculator\obj\Release\Calculator.csprojResolveAssemblyReference.cache
+C:\AulaNew\primeri.csharp.miniproject01\MP01\Calculator\bin\Release\About.dll
+C:\AulaNew\primeri.csharp.miniproject01\MP01\Calculator\bin\Release\About.pdb
+C:\AulaNew\primeri.csharp.miniproject01\MP01\Calculator\bin\Release\Colors.dll
+C:\AulaNew\primeri.csharp.miniproject01\MP01\Calculator\bin\Release\Colors.pdb
+C:\AulaNew\primeri.csharp.miniproject01\MP01\Calculator\bin\Release\Calculations.dll
+C:\AulaNew\primeri.csharp.miniproject01\MP01\Calculator\bin\Release\Calculations.pdb

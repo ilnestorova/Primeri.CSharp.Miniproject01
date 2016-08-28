@@ -11,6 +11,9 @@ namespace UserInput01
         //definirane na classa
         About.Me about = new About.Me();
         Colors.ForCLI nc = new Colors.ForCLI();
+        Calculations.MainLibrary ncalc = new Calculations.MainLibrary();
+      
+
         public UInput()
         {
         }
@@ -31,11 +34,7 @@ namespace UserInput01
                 // proverka za nalichni comandi
                 nc.Command();
                 ucommand = Console.ReadLine();
-                if (ucommand.ToLower().Contains("command1"))
-                {
-                    nc.Defaulf(); Console.Write("It is starting ");
-                    nc.Result(); Console.WriteLine("Command1\n");
-                }
+                if (ucommand.ToLower().Contains("izkop")) ncalc.F01.calc(ucommand);
                 if (ucommand.ToLower().Contains("command2")) Console.WriteLine("Command2 is starting");
                 if (ucommand.ToLower().Contains("command3")) Console.WriteLine("Command3 is starting");
             } while (ucommand.ToLower() != "exit"); 

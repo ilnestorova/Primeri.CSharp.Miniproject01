@@ -48,6 +48,10 @@
       <Project>{0945b7d1-a4f9-48c5-b22e-7d9850bf4452}</Project>
       <Name>About</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Calculations\Calculations.csproj">
+      <Project>{a684aa6e-f778-4b30-ac77-4ef6ff76e81f}</Project>
+      <Name>Calculations</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Colors\Colors.csproj">
       <Project>{d1fe369e-0694-4fd2-a7b7-7ccb2789edb2}</Project>
       <Name>Colors</Name>
