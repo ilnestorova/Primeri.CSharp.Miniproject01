@@ -35,7 +35,7 @@ namespace UserInput01
                 nc.Command();
                 ucommand = Console.ReadLine();
                 if (ucommand.ToLower().Contains("izkop")) ncalc.F01.calc(ucommand);
-                if (ucommand.ToLower().Contains("command2")) Console.WriteLine("Command2 is starting");
+                if (ucommand.ToLower().Contains("inangel")) ncalc.F02.calc(ucommand);
                 if (ucommand.ToLower().Contains("command3")) Console.WriteLine("Command3 is starting");
             } while (ucommand.ToLower() != "exit"); 
         }

@@ -22,7 +22,7 @@ namespace Calculations
                     help();
 
                 }
-                if (param.Length >1 && !nuserInput.Contains("help"))
+                if (param.Length >1 && !nuserInput.ToLower(). Contains("help"))
                 {
                     //calculations
                     double result = 0;
