@@ -39,9 +39,9 @@ namespace UserInput01
                 if (ucommand.ToLower().Contains("command3")) Console.WriteLine("Command3 is starting");
             } while (ucommand.ToLower() != "exit"); 
         }
-        public void JustTesting()
+       /* public void JustTesting()
          {
              Console.WriteLine("Starting of UserInput.Iunput.JustTesting()");
-         }
+         }*/
 }
 }

@@ -3,7 +3,7 @@
 
 namespace Calculations
 {
-   public class Formula01
+    public class Formula01
     {
         //libraries
         private Colors.ForCLI nc = new Colors.ForCLI();
@@ -18,23 +18,25 @@ namespace Calculations
                 string[] param = nuserInput.Split(' ');
                 if (param.Length > 1 && nuserInput.Contains("help"))
                 {
-                    //help about comand
+                    //help about command
+                    help();
+
                 }
-                if (param.Length > 1 && !nuserInput.Contains("help"))
+                if (param.Length >1 && !nuserInput.Contains("help"))
                 {
                     //calculations
                     double result = 0;
                     if (runCalculations(param, out result))
                     {
                         nc.Defaulf(); Console.Write("Obema na izkopa e: ");
-                        nc.Result(); Console.WriteLine(result.ToString("N2")+"m3");
+                        nc.Result(); Console.WriteLine(result.ToString("N2") + " m3");
                     }
+
                     else
                     {
-                        Console.WriteLine("Invalid input.You can see sintaxes with \"help\"");
+                        nc.Defaulf(); Console.WriteLine("Invalid input.You can see sintaxes with \"help\"\n");
                     }
                 }
-
             }
             catch { }
         }
@@ -51,16 +53,32 @@ namespace Calculations
                 double.TryParse(nparam[4], out b2);
                 double.TryParse(nparam[5], out h);
                 double F1 = a1 * b1, F2 = a2 * b2;
-                result = h*(F1 +  F2 )/2;
+                result = h * (F1 + F2) / 2;
 
                 return true;
             }
-            catch
-            {
-                result = 0;
-                return false;
-            }
+            catch { }
+
+            result = 0;
+            return false;
         }
+
         //Help about command
-    }
+        private void help()
+        {
+         nc.Result(); Console.Write("[izkop ]");
+                    nc.Defaulf(); Console.WriteLine("- Komanda za presmiatane na stroitelen izkop");
+                    nc.Result(); Console.Write("[parametri na izkopa ]");
+                    nc.Defaulf(); Console.WriteLine("- a1, b1, a2, b2, h\n");
+
+                    nc.Command(); Console.WriteLine("a1 i b1 ");
+                    nc.Defaulf(); Console.WriteLine("- shirina i daljina na gornata chast na izkopa");
+                    nc.Command(); Console.WriteLine("a2 i b2 ");
+                    nc.Defaulf(); Console.WriteLine("- shirina i daljina na dolnata chast na izkopa");
+                    nc.Command(); Console.WriteLine("h ");
+                    nc.Defaulf(); Console.WriteLine("- visochina na izkopa\n");
+            }
+   }
 }
+    
+    
