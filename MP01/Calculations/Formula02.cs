@@ -8,6 +8,7 @@ namespace Calculations
 {
      public class Formula02
     {
+        Colors.ForCLI cl = new Colors.ForCLI();
         public Formula02()
             {
             }
@@ -21,19 +22,19 @@ namespace Calculations
                 {
                     help();
                 }
-                if (param.Length == 4)
+                else if (param.Length == 4)
                 {
                     double result = 0;
                     if (runcolculation(param, out result))
                     {
-                        Console.Write("Obema na izkopa e: ");
-                        Console.WriteLine(result.ToString("N2") + " m3");
+                        cl.Defaulf(); Console.Write("Obema na izkopa e: ");
+                        cl.Result(); Console.WriteLine(result.ToString("N2") + " m3");
                         Console.WriteLine();
                     }
                 }
                 else
                 {
-                    Console.WriteLine("Invalid input.You can see sintaxes with \"help\"");
+                    cl.Defaulf(); Console.WriteLine("Invalid input.You can see sintaxes with \"help\"");
                     Console.WriteLine();
                 }
                     
@@ -57,16 +58,16 @@ namespace Calculations
         }
                 private void help()
         {
-            Console.Write( "inangel" );
-            Console.WriteLine("-indandet angel\n");
+            cl.Command();   Console.Write( "inangel" );
+            cl.Defaulf(); Console.WriteLine("-indandet angel");
 
-            Console.Write("parametri: ");
-            Console.WriteLine("a, b, h\n");
+            cl.Command(); Console.Write("parametri: ");
+            cl.Defaulf(); Console.WriteLine("a, b, h\n");
 
-            Console.Write("a i b");
-            Console.WriteLine(" - shirina i daljina na izkop");
-            Console.Write("h ");
-            Console.WriteLine("- visochina na izkop\n");
+            cl.Command(); Console.Write("a i b");
+            cl.Defaulf(); Console.WriteLine(" - shirina i daljina na izkop");
+            cl.Command(); Console.Write("h ");
+            cl.Defaulf(); Console.WriteLine("- visochina na izkop\n");
 
         }
     }

@@ -71,11 +71,11 @@ namespace Calculations
                     nc.Result(); Console.Write("[parametri na izkopa ]");
                     nc.Defaulf(); Console.WriteLine("- a1, b1, a2, b2, h\n");
 
-                    nc.Command(); Console.WriteLine("a1 i b1 ");
+                    nc.Command(); Console.Write("a1 i b1 ");
                     nc.Defaulf(); Console.WriteLine("- shirina i daljina na gornata chast na izkopa");
-                    nc.Command(); Console.WriteLine("a2 i b2 ");
+                    nc.Command(); Console.Write("a2 i b2 ");
                     nc.Defaulf(); Console.WriteLine("- shirina i daljina na dolnata chast na izkopa");
-                    nc.Command(); Console.WriteLine("h ");
+                    nc.Command(); Console.Write("h ");
                     nc.Defaulf(); Console.WriteLine("- visochina na izkopa\n");
             }
    }
