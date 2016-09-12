@@ -10,7 +10,7 @@ namespace UserInput01
     {
         //definirane na classa
         About.Me about = new About.Me();
-        Colors.ForCLI nc = new Colors.ForCLI();
+        Colors.ForCLI cl = new Colors.ForCLI();
         Calculations.MainLibrary ncalc = new Calculations.MainLibrary();
       
 
@@ -20,7 +20,7 @@ namespace UserInput01
         
         public void SayHello()
         {
-            nc.Defaulf();
+            cl.Defaulf();
             Console.WriteLine("Wellcome in "+about.shortName+"\n"+about.version+"\n");
         }
         public void GetUserCommands ()
@@ -29,14 +29,24 @@ namespace UserInput01
             do
             {
                 //vzimane na comanda
-                nc.Promt();
+                cl.Promt();
                 Console.Write( "Enter your command: " );
                 // proverka za nalichni comandi
-                nc.Command();
+                cl.Command();
                 ucommand = Console.ReadLine();
-                if (ucommand.ToLower().Contains("izkop")) ncalc.F01.calc(ucommand);
-                if (ucommand.ToLower().Contains("inangle")) ncalc.F02.calc(ucommand);
+                if (ucommand.ToLower().Contains("izkop"))    ncalc.F01.calc(ucommand);
+                if (ucommand.ToLower().Contains("inangle"))  ncalc.F02.calc(ucommand);
                 if (ucommand.ToLower().Contains("outangle")) ncalc.F03.calc(ucommand);
+
+                if (ucommand.ToLower().Contains("help")||    
+                    ucommand.ToLower()=="h")                 ncalc.commnds();
+
+                if (ucommand.ToLower().Contains("clear") ||
+                                    ucommand.ToLower() == "c")
+                {
+                    Console.Clear();
+                    SayHello();
+                }
             } while (ucommand.ToLower() != "exit"); 
         }
        /* public void JustTesting()
