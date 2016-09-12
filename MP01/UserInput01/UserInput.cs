@@ -35,8 +35,8 @@ namespace UserInput01
                 nc.Command();
                 ucommand = Console.ReadLine();
                 if (ucommand.ToLower().Contains("izkop")) ncalc.F01.calc(ucommand);
-                if (ucommand.ToLower().Contains("inangel")) ncalc.F02.calc(ucommand);
-                if (ucommand.ToLower().Contains("command3")) Console.WriteLine("Command3 is starting");
+                if (ucommand.ToLower().Contains("inangle")) ncalc.F02.calc(ucommand);
+                if (ucommand.ToLower().Contains("outangle")) ncalc.F03.calc(ucommand);
             } while (ucommand.ToLower() != "exit"); 
         }
        /* public void JustTesting()

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Calculations
 {
-     public class Formula02
+   public class Formula03
     {
         private Colors.ForCLI cl = new Colors.ForCLI();
-        public Formula02()
+        public Formula03()
             {
             }
         public void calc(string uInput)
@@ -25,7 +25,7 @@ namespace Calculations
                 else if (param.Length == 4)
                 {
                     double result = 0;
-                    if (runcolculation(param, out result))
+                    if (runcalculation(param, out result))
                     {
                         cl.Defaulf(); Console.Write("Obema na izkopa e: ");
                         cl.Result(); Console.WriteLine(result.ToString("N2") + " m3");
@@ -37,29 +37,29 @@ namespace Calculations
                     cl.Defaulf(); Console.WriteLine("Invalid input.You can see sintaxes with \"help\"");
                     Console.WriteLine();
                 }
-                    
-                
+
+
             }
             catch { }
         }
-        public bool runcolculation(string[] param, out double result)
+        public bool runcalculation(string[] param, out double result)
         {
             try
             {
-                double a = 0;  double.TryParse(param[1], out a);
+                double a = 0; double.TryParse(param[1], out a);
                 double b = 0; double.TryParse(param[2], out b);
                 double h = 0; double.TryParse(param[3], out h);
-                result = a * b * h / 3;
+                result = 2*a * b * h / 3;
                 return true;
             }
             catch { }
             result = 0;
             return false;
         }
-                private void help()
+        public void help()
         {
-            cl.Command();   Console.Write( "inangle" );
-            cl.Defaulf(); Console.WriteLine("-indanded angle");
+            cl.Command(); Console.Write("outangel");
+            cl.Defaulf(); Console.WriteLine("-convex angel");
 
             cl.Command(); Console.Write("parametri: ");
             cl.Defaulf(); Console.WriteLine("a, b, h\n");
