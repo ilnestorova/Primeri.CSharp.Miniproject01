@@ -6,50 +6,48 @@ using System.Threading.Tasks;
 
 namespace Calculations
 {
-   public class Formula03
+    public class Formula05
     {
         private Colors.ForCLI cl = new Colors.ForCLI();
-        public Formula03()
-            {
-            }
+        public Formula05()
+        {
+        }
         public void calc(string uInput)
         {
+            string[] param = uInput.Split(' ');
+            double result = 0;
             try
             {
-                string[] param = uInput.Split(' ');
-
-                if (param.Length > 1 && uInput.ToLower().Contains("help"))
+                if (param.Length > 1 && uInput.ToLower().Contains("help")) help();
+                else if (param.Length == 5)
                 {
-                    help();
-                }
-                else if (param.Length == 4)
-                {
-                    double result = 0;
                     if (runcalculation(param, out result))
                     {
                         cl.Defaulf(); Console.Write("Obema na izkopa e: ");
-                        cl.Result(); Console.WriteLine(result.ToString("N2") + " m3");
+                        cl.Result(); Console.WriteLine("{0:N2}" + " m3", result);
                         Console.WriteLine();
                     }
-                }
+            }
                 else
                 {
                     cl.Defaulf(); Console.WriteLine("Invalid input.You can see sintaxes with \"help\"");
                     Console.WriteLine();
                 }
-
-
             }
             catch { }
-        }
+            }
+            
         public bool runcalculation(string[] param, out double result)
         {
             try
             {
-                double a = 0; double.TryParse(param[1], out a);
-                double b = 0; double.TryParse(param[2], out b);
-                double h = 0; double.TryParse(param[3], out h);
-                result = 2*a * b * h / 3;
+                double a = 0, b = 0, L = 0, h = 0;
+                double.TryParse(param[1], out a);
+                double.TryParse(param[2], out b);
+                double.TryParse(param[3], out L);
+                double.TryParse(param[4], out h);
+
+                result = (a + b) / 2 * L * h;
                 return true;
             }
             catch { }
@@ -58,16 +56,19 @@ namespace Calculations
         }
         public void help()
         {
-            cl.Command(); Console.Write("outangle");
-            cl.Defaulf(); Console.WriteLine("-convex angle");
+            cl.Command(); Console.Write("cangle");
+            cl.Defaulf(); Console.WriteLine("-canal angle");
 
             cl.Command(); Console.Write("parametri: ");
-            cl.Defaulf(); Console.WriteLine("a, b, h\n");
+            cl.Defaulf(); Console.WriteLine("a, b,L, h\n");
 
             cl.Command(); Console.Write("a i b");
-            cl.Defaulf(); Console.WriteLine(" - shirina i daljina na izkop");
+            cl.Defaulf(); Console.WriteLine(" - gorna i dolna shirina na izkop");
+            cl.Command(); Console.Write("L ");
+            cl.Defaulf(); Console.WriteLine("- daljina na izkop\n");
             cl.Command(); Console.Write("h ");
             cl.Defaulf(); Console.WriteLine("- visochina na izkop\n");
+
 
         }
     }

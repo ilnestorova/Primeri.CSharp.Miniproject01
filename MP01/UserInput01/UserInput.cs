@@ -37,6 +37,9 @@ namespace UserInput01
                 if (ucommand.ToLower().Contains("izkop"))    ncalc.F01.calc(ucommand);
                 if (ucommand.ToLower().Contains("inangle"))  ncalc.F02.calc(ucommand);
                 if (ucommand.ToLower().Contains("outangle")) ncalc.F03.calc(ucommand);
+                if (ucommand.ToLower().Contains("sangle"))   ncalc.F04.calc(ucommand);
+                if (ucommand.ToLower().Contains("cangle"))   ncalc.F05.calc(ucommand);
+
 
                 if (ucommand.ToLower().Contains("help")||    
                     ucommand.ToLower()=="h")                 ncalc.commnds();
