@@ -3,14 +3,20 @@
 
 namespace Calculations
 {
+    /// <summary>
+    ///Class za Formula za obiknoven stroitelen izkop/// </summary>
     public class Formula01
     {
         //libraries
         private Colors.ForCLI nc = new Colors.ForCLI();
-        public Formula01()// formula za obiknoven izkop
+        /// <summary>
+        /// Konstruktor za Formula01 /// </summary>
+        public Formula01()
         {
         }
-        // Parsvane
+       /// <summary>
+       /// Metod za izchiclenie na obiknoven izkop Formula01 /// </summary>
+       
         public void calc(string nuserInput)
         {
             try
@@ -40,8 +46,10 @@ namespace Calculations
             }
             catch { }
         }
-        // Izchislenie i izpisvane
-        public bool runCalculations(string[] nparam, out double result)
+        /// <summary>
+        /// Varteshem metod za presmiatane na Formula 01 sled parsvane komandata na potrebitelya /// </summary>
+        
+        private bool runCalculations(string[] nparam, out double result)
         {
             try
             {
@@ -63,7 +71,8 @@ namespace Calculations
             return false;
         }
 
-        //Help about command
+        /// <summary>
+        ///Vatreshen metod pokazvasht sintaksisa na komandnia red /// </summary>
         private void help()
         {
          nc.Result(); Console.Write("[izkop ]");

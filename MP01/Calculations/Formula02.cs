@@ -42,7 +42,7 @@ namespace Calculations
             }
             catch { }
         }
-        public bool runcolculation(string[] param, out double result)
+        private bool runcolculation(string[] param, out double result)
         {
             try
             {

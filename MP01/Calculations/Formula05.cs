@@ -37,7 +37,7 @@ namespace Calculations
             catch { }
             }
             
-        public bool runcalculation(string[] param, out double result)
+        private bool runcalculation(string[] param, out double result)
         {
             try
             {
@@ -54,7 +54,7 @@ namespace Calculations
             result = 0;
             return false;
         }
-        public void help()
+        private void help()
         {
             cl.Command(); Console.Write("cangle");
             cl.Defaulf(); Console.WriteLine("-canal angle");
